@@ -24,8 +24,18 @@ app {
 
     /* Position the content inside the overlay */
     .app-controlpanel .card-body {
-            position: relative;
-            width: 100%; /* 100% width */
+        position: relative;
+        width: 100%; /* 100% width */
+    }
+
+    /* Pad the navigation links */
+    .app-controlpanel .nav-item {
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .app-controlpanel .card-body .control-label {
+        color: white;
     }
 
 /* Admin Modal */
@@ -41,16 +51,16 @@ app {
     background: rgba(0,0,0,0.3); /* Dim background */
 }
 
-    .app-admin-modal .modal-dialog {
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        max-width: none; /* Override default of 500px */
-    }
+.app-admin-modal .modal-dialog {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    max-width: none; /* Override default of 500px */
+}
 
-    .app-admin-modal .modal-content {
-        margin: 5% auto; /* 5% from the top and centered */
-        width: 80%; /* Could be more or less, depending on screen size */
-    }
+.app-admin-modal .modal-content {
+    margin: 5% auto; /* 5% from the top and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+}
 
 .app-pane-admin-border {
     width: 100%;
@@ -129,7 +139,7 @@ app {
         border-color: #3E474F transparent transparent transparent;
         bottom: 100%;
         content: "";
-        margin-left: -0.5em;
+        margin-left: -30%;
         transition: all .65s cubic-bezier(.84,-0.18,.31,1.26), opacity .65s .5s;
         transform: scale(.6) translateY(-90%);
     }
@@ -145,7 +155,7 @@ app {
         bottom: 180%;
         color: #EDEFF0;
         content: attr(data-tip);
-        margin-left: -8.75em;
+        margin-left: -50%;
         padding: 1em;
         transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
         transform: scale(.6) translateY(50%);
